@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
-# Create your views here.
+from .models import PictureModel
+from .serializers import PictureSerializer, PictureDetailsSerializer
+
+
+class PicturesListCreateView(ListCreateAPIView):
+    queryset = PictureModel.objects.all()
+    serializer_class = PictureSerializer
+
+
+class PicturesRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
+    queryset = PictureModel.objects.all()
+    serializer_class = PictureDetailsSerializer
