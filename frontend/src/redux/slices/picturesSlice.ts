@@ -4,7 +4,7 @@ import {pictureService} from "../../services";
 
 
 interface IState{
-    pictures: IPicture[],
+    pictures: IPicture[]
 }
 
 const initialState: IState = {
@@ -13,6 +13,7 @@ const initialState: IState = {
 
 const getAll = createAsyncThunk<IPicture[], void>(
     'picturesSlice/getAll',
+
     async (_, {rejectWithValue})=> {
         try {
             const {data} = await pictureService.getAll()

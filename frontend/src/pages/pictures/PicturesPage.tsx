@@ -1,9 +1,10 @@
 import {FC} from 'react';
+import {Pictures} from "../../componets/PicturesContainer";
 
 const PicturesPage:FC = () => {
     return (
         <div>
-            Picture
+            <Pictures/>
         </div>
     );
 };

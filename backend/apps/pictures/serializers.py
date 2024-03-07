@@ -15,10 +15,10 @@ class PictureSerializer(ModelSerializer):
 
     class Meta:
         model = PictureModel
-        fields = ('id', 'title', 'format', 'genre', 'picture', 'created_at', 'updated_at',)
+        fields = ('id', 'title', 'format', 'genre', 'image', 'created_at', 'updated_at',)
 
 
 class PictureDetailsSerializer(ModelSerializer):
     class Meta:
         model = PictureModel
-        fields = ('id', 'title', 'format', 'genre', 'picture', 'created_at', 'updated_at',)
+        fields = ('id', 'title', 'format', 'genre', 'image', 'created_at', 'updated_at',)

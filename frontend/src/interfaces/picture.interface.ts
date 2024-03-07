@@ -3,7 +3,7 @@ export interface IPicture {
     title: string;
     format: string;
     genre: string;
-    picture: string;
+    image: string;
     created_at: string;
     updated_at: string;
 }
