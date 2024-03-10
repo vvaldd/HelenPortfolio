@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 
     'core',
     'apps.pictures',
+    'apps.albums',
 ]
 
 MIDDLEWARE = [

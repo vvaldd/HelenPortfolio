@@ -6,7 +6,7 @@ from .serializers import PictureSerializer, PictureDetailsSerializer
 
 class PicturesListCreateView(ListCreateAPIView):
     queryset = PictureModel.objects.all()
-    serializer_class = PictureSerializer
+    serializer_class = PictureDetailsSerializer
 
 
 class PicturesRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
